@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment an enum</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for an enum (without the enclosing summary tag).</Description>
+      <Shortcut>cen</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion01</ID>
+          <Default>Describes</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion02</ID>
+          <Default>Defines</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion03</ID>
+          <Default>Identifies</Default>
+        </Literal>
+		<Literal Editable="true">
+          <ID>documentationBeginningSuggestion04</ID>
+          <Default>Specifies flags for</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentation</ID>
+          <Default>something</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// $documentationBeginningSuggestion01$$documentationBeginningSuggestion02$$documentationBeginningSuggestion03$$documentationBeginningSuggestion04$ $documentation$.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

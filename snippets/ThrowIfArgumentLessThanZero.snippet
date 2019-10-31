@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Throw an ArgumentOutOfRangeException</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Throws an ArgumentOutOfRangeException if the specified argument is less than 0.</Description>
+      <Shortcut>ar</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>param</ID>
+          <ToolTip>The name of the numeric parameter.</ToolTip>
+          <Default>param</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if ($param$ < 0)
+	  throw new ArgumentOutOfRangeException(nameof($param$));$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

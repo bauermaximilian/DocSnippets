@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment a constructor</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for a class constructor (without the enclosing summary tag).</Description>
+      <Shortcut>cco</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>classname</ID>
+          <Default>ClassName</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// Initializes a new instance of the <see cref="$classname$"/> class.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

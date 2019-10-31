@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment a class</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for a class (without the enclosing summary tag).</Description>
+      <Shortcut>ccl</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion01</ID>
+          <Default>Represents</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion02</ID>
+          <Default>Provides</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationPart01</ID>
+          <Default>something</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationMiddleSuggestion03</ID>
+          <Default>as</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationMiddleSuggestion04</ID>
+          <Default>for</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationPart02</ID>
+          <Default>something else</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// $documentationBeginningSuggestion01$$documentationBeginningSuggestion02$ $documentationPart01$ $documentationMiddleSuggestion03$$documentationMiddleSuggestion04$ $documentationPart02$.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment an interface</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for an interface (without the enclosing summary tag).</Description>
+      <Shortcut>ci</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion01</ID>
+          <Default>Defines methods to</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion02</ID>
+          <Default>Provides functionality to</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentationBeginningSuggestion03</ID>
+          <Default>Represents</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentation</ID>
+          <Default>something</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// $documentationBeginningSuggestion01$$documentationBeginningSuggestion02$$documentationBeginningSuggestion03$ $documentation$.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

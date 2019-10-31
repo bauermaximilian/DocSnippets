@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment a setter</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for a setter property (without the enclosing summary tag).</Description>
+      <Shortcut>cs</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>documentation</ID>
+          <ToolTip>The actual documentation of the specific property.</ToolTip>
+          <Default>a value indicating whether </Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// Sets $documentation$.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

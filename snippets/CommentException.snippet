@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment an exception</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for an exception (with the enclosing exception tag).</Description>
+      <Shortcut>cex</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>exceptionType</ID>
+          <ToolTip>The type of the exception.</ToolTip>
+          <Default>ArgumentNullException</Default>
+        </Literal>
+		<Literal Editable="true">
+          <ID>exceptionDescription</ID>
+          <ToolTip>The description of the exception.</ToolTip>
+          <Default>parameter is null</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// <exception cref="$exceptionType$">
+	  /// Is thrown when $exceptionDescription$.
+	  /// </exception>$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

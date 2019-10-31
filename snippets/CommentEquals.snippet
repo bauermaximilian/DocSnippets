@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment the Equals method.</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a default documentation comment for an "Equals" method.</Description>
+      <Shortcut>ceq</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>paramName</ID>
+          <Default>obj</Default>
+        </Literal>
+		</Declarations>
+      <Code Language="csharp"><![CDATA[/// <summary>
+        /// Determines whether the specified object is equal to the current 
+        /// object.
+        /// </summary>
+        /// <param name="$paramName$">
+        /// The object to compare with the current object.
+        /// </param>
+        /// <returns>
+        /// <c>true</c> if the specified object is equal to the current object,
+        /// <c>false</c> otherwise.
+        /// </returns>$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

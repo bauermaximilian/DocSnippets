@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment the GetEnumerator method.</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a default documentation comment for a "GetEnumerator" method.</Description>
+      <Shortcut>cge</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+	          <Literal Editable="true">
+          <ID>typeSuffix</ID>
+          <ToolTip>The type suffix for the enumerator.</ToolTip>
+          <Default>{T}</Default>
+        </Literal>
+		</Declarations>
+      <Code Language="csharp"><![CDATA[/// <summary>
+        /// Returns an <see cref="IEnumerator$typeSuffix$"/> for the 
+        /// current instance.
+        /// </summary>
+        /// <returns>A new <see cref="IEnumerator$typeSuffix$"/> instance.</returns>$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

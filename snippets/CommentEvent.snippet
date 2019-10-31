@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Comment a event</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Creates a documentation comment stub for a event (without the enclosing summary tag).</Description>
+      <Shortcut>cev</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>documentationPrefix</ID>
+          <ToolTip>The prefix of the documentation of the specific event.</ToolTip>
+          <Default>when/before/after</Default>
+        </Literal>
+		<Literal Editable="true">
+          <ID>documentation</ID>
+          <ToolTip>The actual documentation of the specific event.</ToolTip>
+          <Default>something happened</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[/// Occurs $documentationPrefix$ $documentation$.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
