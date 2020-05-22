@@ -26,12 +26,13 @@ One of the things I really love about .NET and VisualStudio is its good document
 
 ### Additional code shortcuts
 The following shortcuts are not for documenting, but for adding commonly used code right at the start of a method.
-- ```an```: Throw an **ArgumentNullException** if the specified argument is null.
-- ```ar```: Throw an **ArgumentOutOfRangeException** if the specified argument is less than 0.
-- ```arr```: Throw an **ArgumentOutOfRangeException** if the specified argument is less than 0 or equal to/larger than the variable ```Count```.
+- ```an```: Throw an **ArgumentNullException** if the specified parameter value is null.
+- ```aan```: Assign a variable and throw an **ArgumentNullException** if the specified parameter value is null.
+- ```ar```: Throw an **ArgumentOutOfRangeException** if the specified parameter value is less than 0.
+- ```arr```: Throw an **ArgumentOutOfRangeException** if the specified parameter value is less than 0 or equal to/larger than the variable ```Count```.
 
 ## Installing instructions
-First decide which commenting shortcuts you actually want - then download the appropriate [_.snippet_-files](./snippets/) and add them via the Snippet Manager in Visual Studio. The most simple way without doing any additional configuration would probably be to open up the _Visual Studio 2019_ (or _Visual Studio 2017_) directory under _Documents_, then navigate to ```Code Snippets\Visual C#\My Code Snippets``` and just paste them there.
+Clone or download this repository (e.g. to ```Documents\Visual Studio 2019\Code Snippets\Visual C#\DocSnippets```), then add the location of that directory for the language "CSharp" using the "Code Snippets Manager" (located in the "Tools" menu).
 
 ## Usage
 For myself, I found that the fastest way of adding and filling out one of these comment stubs works as follows:

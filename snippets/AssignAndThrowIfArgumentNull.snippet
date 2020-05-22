@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Assign or throw an ArgumentNullException</Title>
+      <Author>Maximilian Bauer</Author>
+      <Description>Assign a variable or throw an ArgumentNullException if value is null.</Description>
+      <Shortcut>aan</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+		<Literal Editable="true">
+          <ID>target</ID>
+          <ToolTip>The target field, property or variable the parameter should be assigned to.</ToolTip>
+          <Default>targetVariable</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>param</ID>
+          <ToolTip>The name of the nullable parameter.</ToolTip>
+          <Default>param</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[$target$ = $param$ ?? throw new ArgumentNullException(nameof($param$));$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
